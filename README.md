@@ -42,4 +42,58 @@ Select an option:
 3. Create new Bucket and Users
 4. Delete Bucket, policies, and Users
 5. Exit
+
+
+1.List Buckets and their size
++-----------+-----------+
+| Bucket    |    Size   |
++-----------+-----------+
+| bucket1   | 535.03 GB |
+| bucket2   | 548.18 MB |
++-----------+-----------+
+
+
+2. List Users and their permissions
++------------------------------+----------------------+-------------------------------+
+|    User                      |    Access Key ID     |             Policy            |
++------------------------------+----------------------+-------------------------------+
+|   testbucketgithubUser1      | AKIATXXXXXXXXXXXXXXX |         AmazonS3FullAccess    |
+|   testbucketgithubUser2      | AKIATXXXXXXXXXXXXXXX |          Bucket-bucket2       |
+|   testbucketgithubUser3      | AKIATXXXXXXXXXXXXXXX |          Bucket-bucket1       |
++------------------------------+----------------------+-------------------------------+
+
+3. Create new Bucket and Users
+
+Bucket Name: testbucketgithub
+Nº of users for this bucket: 3
+Credentials saved on a .txt
++-----------------------+----------------------+------------------------------------------+
+|        Usuario        |    Access Key ID     |            Secret Access Key             |
++-----------------------+----------------------+------------------------------------------+
+| testbucketgithubUser1 | AKIATXXXXXXXXXXXX    |                  HIDDEN                  |
+| testbucketgithubUser2 | AKIATXXXXXXXXXXXX    |                  HIDDEN                  |
+| testbucketgithubUser3 | AKIATXXXXXXXXXXXX    |                  HIDDEN                  |
++-----------------------+----------------------+------------------------------------------+
+
+
+4. Delete Bucket, policies, and Users
+
+Buckets List:
+testbucketgithub
+
+Bucket Name to delete: testbucketgithub
+Bucket testbucketgithub deleted.
+
+User1 has not assigned this policy
+Detached policy for user testbucketgithubUser1
+Detached policy for user testbucketgithubUser2
+Detached policy for user testbucketgithubUser3
+Policy arn:aws:iam::<USER ID>:policy/Bucket_testbucketgithub removed.
+
+User testbucketgithubUser1 removed.
+User testbucketgithubUser2 removed.
+User testbucketgithubUser3 removed.
+
+Removal complete.
+
 ```
