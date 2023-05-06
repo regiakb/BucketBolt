@@ -21,7 +21,7 @@ To run this code, you need AWS credentials with appropriate permissions to creat
 To install dependencies:
 
 ```python
-  pip install -r requirements.txt
+pip install boto3 prettytable colorama
 ```
 
 ## Usage/Examples
