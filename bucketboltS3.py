@@ -27,7 +27,7 @@ s3 = session.resource('s3')
 iam = session.client('iam')
 
 def create_bucket():
-    bucket_name = input("Nombre del Bucket: ")
+    bucket_name = input("Bucket's name: ")
     try:
         s3.create_bucket(Bucket=bucket_name)
         print(Fore.GREEN + f"Bucket {bucket_name} successfully created!" + Fore.RESET)
@@ -78,13 +78,13 @@ def list_users():
 
 def create_bucket_users():
 
-    bucket_name = input("Introduce el nombre del bucket: ")
+    bucket_name = input("Enter the bucket name: ")
 
     s3.create_bucket(Bucket=bucket_name, CreateBucketConfiguration={'LocationConstraint': 'eu-west-3'})
 
     iam = session.client('iam')
 
-    num_users = int(input("Introduce el número de usuarios que quieres crear: "))
+    num_users = int(input("How many users you want? "))
 
     policy = {
         "Version": "2012-10-17",
@@ -132,7 +132,7 @@ def delete_buckets():
     print("Buckets List:")
     for bucket in buckets:
         print(bucket['Name'])
-    bucket_name = input("Introduce el nombre del bucket que deseas eliminar: ")
+    bucket_name = input("Name of bucket to delete: ")
     response = s3s.list_objects(Bucket=bucket_name)
     s3s.delete_bucket(Bucket=bucket_name)
     print(Fore.GREEN + f"Bucket {bucket_name} deleted." + Fore.RESET)
