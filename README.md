@@ -15,6 +15,20 @@ To run this code, you need AWS credentials with appropriate permissions to creat
 4. Delete Bucket, policies, and Users
     Delete all, bucket, policies and users
 
+## Credentials:
+
+```python
+session = boto3.Session(
+    aws_access_key_id='<YOUR ACCESS KEY ID>',
+    aws_secret_access_key='<YOUR SECRET ACCESS KEY>',
+    region_name='<BUCKET REGION>'
+)
+
+...
+
+policy_arn = f"arn:aws:iam::<YOUR USER ID>:policy/Bucket_{bucket_name}"
+
+```
 
 ## Dependencies
 
