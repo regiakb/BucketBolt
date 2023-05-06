@@ -44,7 +44,7 @@ Select an option:
 5. Exit
 
 
-1.List Buckets and their size
+1. List Buckets and their size
 +-----------+-----------+
 | Bucket    |    Size   |
 +-----------+-----------+
@@ -84,7 +84,7 @@ testbucketgithub
 Bucket Name to delete: testbucketgithub
 Bucket testbucketgithub deleted.
 
-User1 has not assigned this policy
+testbucketgithubUser1 has not assigned this policy
 Detached policy for user testbucketgithubUser1
 Detached policy for user testbucketgithubUser2
 Detached policy for user testbucketgithubUser3
