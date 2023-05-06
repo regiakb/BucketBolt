@@ -5,7 +5,7 @@ This Python script uses the AWS boto3 library to create, list, and delete S3 buc
 
 To run this code, you need AWS credentials with appropriate permissions to create and delete S3 buckets, list IAM users, and their attached policies. The code can be executed from the command line or from a script file.
 
-## Otions:
+## Options:
 
 1. List Buckets and their size
 2. List Users and their permissions
